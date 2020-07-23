@@ -1,0 +1,11 @@
+{
+	"description" : "Envirosolar Admin",
+	"name" : "codeigniter/framework",
+	"license": "MIT",
+	"require": {
+		"php": "~7.0.32"
+	},
+	"require-dev": {
+		"mikey179/vfsstream": "1.1.*"
+	}
+}

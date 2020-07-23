@@ -1,0 +1,39 @@
+/*========================================================
+        DARK LAYOUT
+=========================================================*/
+.bg-authentication
+{
+    background-color: #22212D;
+}
+.bg-authentication .login-footer
+{
+    padding: 0rem 1.5rem .5rem;
+}
+.bg-authentication .login-footer .footer-btn .btn
+{
+    margin: 1rem 1rem 1rem 0rem; 
+    padding: .9rem 1.2rem !important;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+{
+    .bg-authentication
+    {
+        width: 100%;
+    }
+}
+
+
+#inputName.form-control, #inputEmail.form-control, #inputPassword.form-control, #inputConfPassword.form-control, #user-name.form-control, #user-password.form-control {
+    background-color: #1B1A23 !important;
+    color: white !important;
+}
+
+.bg-authentication .form-label-group > label {
+    opacity: 1;
+    color: white;
+}
+
+.bg-authentication .has-icon-left .form-control-position i {
+    color: #FFCD00;
+}
