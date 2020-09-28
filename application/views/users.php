@@ -59,7 +59,7 @@
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
-        <?php if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') == true) { ?>
+        <?php if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') === true) { ?>
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item"><a href="<?=base_url()?>dashboard"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
                 </li>
@@ -103,7 +103,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="<?=base_url()?>settings"><i class="feather icon-user"></i>Edit Profile</a>
-                                    <?php if ($this->session->userdata('username') != '' && $this->session->userdata('logged_in') == true) ?>
+                                    <?php if ($this->session->userdata('username') != '' && $this->session->userdata('logged_in') === true) ?>
                                     <a class="dropdown-item" href="<?= base_url('logout') ?>"><i class="feather icon-power"></i> Logout</a>
                                     <?php ?>
                                 </div>
@@ -156,7 +156,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <?php if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') == true) { 
+                            <?php if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') === true) { 
                                 $st = array(
                                     'PENDING' => '#7367F0', 
                                     'ACTIVE' => '#28C76F', 

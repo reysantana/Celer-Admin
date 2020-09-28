@@ -13,7 +13,7 @@ class Settings extends CI_Controller {
 
 	public function index()
 	{
-		if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') == true) {
+		if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') === true) {
 			// $res['data_leads'] = $this->lead_model->get_leads();
 			// $res['data_vips'] = $this->vip_model->get_vips();
 			// $res['data_rewards'] = $this->reward_model->get_rewards();

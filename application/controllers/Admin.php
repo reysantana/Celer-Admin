@@ -13,7 +13,7 @@ class Admin extends CI_Controller
 
 	public function login() 
 	{
-		if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') == true) {
+		if ($this->session->userdata('username') == 'admin' && $this->session->userdata('logged_in') === true) {
 			redirect('/dashboard');
 		} else {
 			$this->load->helper('form');
@@ -37,7 +37,7 @@ class Admin extends CI_Controller
 					$this->session->set_userdata('email', (string)$admin->email);
 					$this->session->set_userdata('avatar', (string)$admin->avatar);
 					$this->session->set_userdata('logged_in', (bool)true);
-
+					
 					redirect('/dashboard');
 				} else {
 					$this->load->view('login');
